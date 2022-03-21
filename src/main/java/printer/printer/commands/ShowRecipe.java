@@ -23,8 +23,8 @@ public class ShowRecipe implements CommandExecutor, TabCompleter {
             sender.sendMessage("Need to be a player");
         } else {
             Player p = (Player) sender;
-            String arg = args[0];
             if(args.length == 1) {
+                String arg = args[0];
                 if(arg.equalsIgnoreCase("PRINTER_CORE")) {
                     CraftingUI i = new CraftingUI();
                     i.setRecipe(new ItemStack(Material.IRON_BLOCK), new ItemStack(Material.DIAMOND),new ItemStack(Material.IRON_BLOCK),
@@ -70,6 +70,9 @@ public class ShowRecipe implements CommandExecutor, TabCompleter {
                     p.sendMessage(Color.colorize("&cNo recipe exists named \"" + arg + "\""));
                     p.playSound(p.getLocation(), Sound.ENTITY_ENDERMAN_TELEPORT,2, 0.1f);
                 }
+            } else{
+                p.sendMessage(Color.colorize("&cToo little or too many arguments. must have 1 argument"));
+                p.playSound(p.getLocation(), Sound.ENTITY_ENDERMAN_TELEPORT,2, 0.1f);
             }
         }
         return false;
