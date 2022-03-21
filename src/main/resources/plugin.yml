@@ -2,6 +2,7 @@ name: Printer
 version: '${project.version}'
 main: printer.printer.Printer
 api-version: 1.18
+author: Wyvern#0001
 commands:
   get:
     permission: printer.get
