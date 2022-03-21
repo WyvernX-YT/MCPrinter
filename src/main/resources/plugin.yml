@@ -1,0 +1,25 @@
+name: Printer
+version: '${project.version}'
+main: printer.printer.Printer
+api-version: 1.18
+commands:
+  get:
+    permission: printer.get
+  reloadConfig:
+    permission: printer.reload
+  showRecipe:
+
+  info:
+
+
+
+
+permissions:
+  printer.give:
+    default: op
+  printer.playerUseWand:
+    default: op
+  printer.playerUsePrinter:
+    default: op
+  printer.reload:
+    default: op

@@ -1,0 +1,23 @@
+#Made by Wyvern#0001
+#This is a configuration file
+
+#Title configuration
+Title:
+  #Show the title true/false
+  enabled: true
+
+  #Effect blindness
+  Blindness:
+    enabled: false
+    time: 0
+
+permissions:
+  playerUseWand:
+    enabled: false
+    permission: printer.playerUseWand
+
+  playerUsePrinter:
+    enabled: false
+    permission: printer.playerUsePrinter
+
+
